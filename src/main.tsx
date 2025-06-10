@@ -1,10 +1,26 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router";
+import { ThemeProvider } from "@gravity-ui/uikit";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+import "./index.css";
+import "overlayscrollbars/overlayscrollbars.css";
+import "@gravity-ui/uikit/styles/styles.css";
+import "./assets/fonts/fonts.css";
+import "./styles.css";
+
+import { Toaster, ToasterComponent, ToasterProvider } from "@gravity-ui/uikit";
+
+const toaster = new Toaster();
+
+import App from "./App.tsx";
+
+createRoot(document.getElementById("root")!).render(
+    <ThemeProvider theme="light">
+        <ToasterProvider toaster={toaster}>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+            <ToasterComponent />
+        </ToasterProvider>
+    </ThemeProvider>,
+);

@@ -1,0 +1,14 @@
+.card {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 180px;
+}
+
+.avatar {
+    max-height: 100px;
+}
+
+.name {
+    text-align: center;
+}

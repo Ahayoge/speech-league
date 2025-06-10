@@ -1,0 +1,69 @@
+.card {
+    width: 813px;
+    height: 176px;
+    background-image: url('../../../../public/images/event.webp');
+    background-size: 277px 176px;
+    background-position: left;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: "JejuMyeongjo";
+}
+
+.card:nth-child(even) {
+    margin-left: 100px;
+}
+
+.content {
+    align-items: center;
+    gap: 50px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fef6d0;
+    padding: 23px 45px;
+    width: 580px;
+    height: 150px;
+}
+
+.date {
+    font-size: 37px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.separator {
+    transform: rotate(30deg);
+    background-color: #000;
+    width: 1px;
+    height: 105px;
+}
+
+.info {
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.price {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.free {
+    color: #C70808;
+}
+
+.notfree {
+    color: black;
+}

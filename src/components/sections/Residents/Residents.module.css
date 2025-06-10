@@ -1,0 +1,10 @@
+.title {
+    margin-bottom: 60px;
+}
+
+.list {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 30px   ;
+}
